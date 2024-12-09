@@ -5,24 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Інформація про зброю</title>
 
-    <!-- Підключення Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@900&display=swap" rel="stylesheet">
     
-    <!-- Підключення стилів -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<!-- Кнопка для зміни теми -->
 <button class="theme-toggle" id="theme-toggle">
-    🌙 <!-- Місяць, символ для темної теми -->
+    🌙
 </button>
 
 <header>
     <h1>Вітаємо на сайті про види зброї</h1>
 </header>
 
-<!-- Зафіксована навігація, з'єднана з головним заголовком -->
 <nav>
     <ul>
         <li><a href="fw.html">Метальна зброя</a></li>
@@ -31,7 +27,6 @@
     </ul>
 </nav>
 
-<!-- Форма для збору даних -->
 <main>
     <section>
         <h2>Залиште свої дані:</h2>
@@ -39,20 +34,23 @@
             <label for="name">Ваше ім'я:</label>
             <input type="text" id="name" name="name" required>
 
-            <label for="interest">сосал?</label>
+            <label for="email">Ваш E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="interest">ви коли-небудь стріляли з вогнепальної зброї?</label>
             <select id="interest" name="interest">
                 <option value="Так">Так</option>
                 <option value="Ні">Ні</option>
             </select>
 
-            <label for="favorite_boxer">пиздиш?</label>
+            <label for="favorite_boxer">з чого ви стріляли, або хотіли б?</label>
             <input type="text" id="favorite_boxer" name="favorite_boxer">
 
-            <label for="frequency">як часто ти так пиздиш?</label>
+            <label for="frequency">який вид озброєння вас цікавить найбільше?</label>
             <select id="frequency" name="frequency">
-                <option value="Щодня">Щодня</option>
-                <option value="Раз на тиждень">Раз на тиждень</option>
-                <option value="Рідко">Рідко</option>
+                <option value="Щодня">Вогнепальна</option>
+                <option value="Раз на тиждень">холодна зброя</option>
+                <option value="Рідко">метальна зброя</option>
             </select>
 
             <button type="submit">Надіслати</button>
@@ -64,7 +62,6 @@
     <p>Виконав: Брагар Кирило</p>
 </footer>
 
-<script src="js/theme.js"></script> <!-- Підключення скрипта для зміни теми -->
-
+<script src="js/theme.js"></script> 
 </body>
 </html>

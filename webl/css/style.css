@@ -1,0 +1,197 @@
+/* Основний стиль сторінки */
+body {
+    background-color: #ffeee6;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: #000000;
+}
+
+/* Темна тема для body */
+body.dark-theme {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+/* Заголовки */
+h1, h2, h3, h4, h5, h6 {
+    transition: color 0.3s ease;
+}
+
+body.dark-theme h1, 
+body.dark-theme h2, 
+body.dark-theme h3, 
+body.dark-theme h4, 
+body.dark-theme h5, 
+body.dark-theme h6 {
+    color: #ffffff;
+}
+
+/* Навігація */
+nav {
+    background-color: #ffaa80;
+    padding: 10px 0;
+    text-align: center;
+}
+
+body.dark-theme nav {
+    background-color: #333333;
+}
+
+nav a {
+    color: #993300;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+body.dark-theme nav a {
+    color: #ffffff;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Основне горизонтальне меню */
+.horizontal-menu {
+    display: flex;
+    justify-content: center;
+    background-color: #ffd1bb;
+    padding: 10px;
+    list-style: none;
+    margin: 0;
+}
+
+body.dark-theme .horizontal-menu {
+    background-color: #444444;
+}
+
+.horizontal-menu li {
+    margin: 0 15px;
+}
+
+.horizontal-menu a {
+    text-decoration: none;
+    color: #993300;
+    font-weight: bold;
+}
+
+body.dark-theme .horizontal-menu a {
+    color: #ffffff;
+}
+
+.horizontal-menu a:hover {
+    text-decoration: underline;
+}
+
+/* Основний текст та параграфи */
+p, span, a, li {
+    transition: color 0.3s ease;
+}
+
+body.dark-theme p, 
+body.dark-theme span, 
+body.dark-theme a, 
+body.dark-theme li {
+    color: #f0f0f0;
+}
+
+/* Історична секція */
+.history-section {
+    background-color: #ffd1bb;
+    padding: 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-theme .history-section {
+    background-color: #2e2e2e;
+    color: #ffffff;
+}
+
+.history-section h2 {
+    color: #993300;
+}
+
+body.dark-theme .history-section h2 {
+    color: #ffffff;
+}
+
+/* Кнопка перемикання теми */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #ff9966;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 100;
+    transition: background-color 0.3s ease;
+}
+
+body.dark-theme .theme-toggle {
+    background-color: #666666;
+}
+
+.theme-toggle:hover {
+    background-color: #ffcc99;
+}
+
+body.dark-theme .theme-toggle:hover {
+    background-color: #888888;
+}
+
+/* Основний контент сторінки */
+main {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-theme main {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+/* Шапка сайту */
+header {
+    background-color: #ffaa80;
+    padding: 20px 0;
+    text-align: center;
+}
+
+body.dark-theme header {
+    background-color: #333333;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #993300;
+}
+
+body.dark-theme header h1 {
+    color: #ffffff;
+}
+
+/* Футер */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #ffaa80;
+}
+
+body.dark-theme footer {
+    background-color: #333333;
+}
+
+footer p {
+    color: #993300;
+}
+
+body.dark-theme footer p {
+    color: #ffffff;
+}
